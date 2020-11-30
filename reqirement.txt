@@ -1,0 +1,23 @@
+HTTPServer
+
+1. 两端通信
+
+    浏览器 （客户端） TCP
+    httpserver (服务端)  （客户端） TCP   既是服务端又是客户端
+    webframe  (服务端)
+
+
+2. 并发
+    httpserver  多进程，多线程
+    webframe 多进程，多线程
+
+3. httpserver -- webframe
+    json --> "{'a':1,'b':'hi'}"
+
+    import json
+    json.dumps()   python数据-->json数据
+    json.loads()   json数据-->python数据
+
+    httpserver-->webframe    {'method':'GET','info':'/'}
+
+    webframe-->httpserver {'status':'200';'data':'xxxx'}
